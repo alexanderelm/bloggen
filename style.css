@@ -4,17 +4,8 @@
 }
 
 body {
-  background: #2A2438;
+  background: rgb(255, 238, 230)  ;
   overflow: hidden;
-}
-
-h1{
-  color: #D33037;
-  position: absolute;
-  font-family: 'ZCOOL XiaoWei', serif;
-  top: 40%;
-  left: 50%;
-  transform: translate(-50%, -50%);
 }
 
 h1{
@@ -28,19 +19,21 @@ h1{
 
 .hej{
   left: -3%;
+  font-family: 'ZCOOL XiaoWei', serif;
   position: absolute;
   font-size: 450px;
   opacity: .1;
-  color: white;
+  color: black;
 }
 
 .blog{
   top: 45%;
   left: 3%;
+  font-family: 'ZCOOL XiaoWei', serif;
   position: absolute;
   font-size: 450px;
   opacity: .1;
-  color: white;
+  color: black;
 }
 
 .wrapper {
@@ -63,12 +56,12 @@ h1{
   text-align: center;
   cursor: pointer;
   border-radius: 50%;
-  border: 2px solid #D8E2DC;
+  border: 2px solid black;
   float: left;
 }
 
 .wrapper ul li .fa {
-  color: #D8E2DC;
+  color: black;
   margin-top: 14px;
 }
 
@@ -124,29 +117,139 @@ h1{
 }
 
 
-/* media queries */
 
-@media screen and (max-width: 640px){
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 376px){
+  * {
+    margin: 0;
+    padding: 0;
+  }
+
+  body {
+    background: rgb(255, 238, 230);
+    overflow: hidden;
+  }
+
+  h1{
+    color: #D33037;
+    position: absolute;
+    font-family: 'ZCOOL XiaoWei', serif;
+    top: 30%;
+    left: 45%;
+    transform: translate(-50%, -50%);
+  }
+
+  .hej{
+    right: -25%;
+    top: 20%;
+    transform: rotate(90deg);
+    position: absolute;
+    font-size: 150px;
+    opacity: .1;
+    color: black;
+  }
+
+  .blog{
+    right: 50%;
+    top: 10%;
+    transform: rotate(90deg);
+    position: absolute;
+    font-size: 150px;
+    opacity: .1;
+    color: black;
+  }
+
   .wrapper {
-      width: 350px;
+    position: absolute;
+    top: 45%;
+    left: 57%;
+    transform: translate(-50%, -50%);
+    width: 420px;
   }
-  .wrapper ul li{
-      margin-top: 10px;
-  }
-  .wrapper ul li.google{
-      margin-left: 60px;
-  }
-}
 
+  .wrapper ul {
+    list-style: none;
+  }
 
-@media screen and (max-width: 340px){
-  .wrapper {
-      width: 150px;
+  .wrapper ul li {
+    width: 57.5px;
+    height: 57.5px;
+    line-height: 57.5px;
+    margin: 0 5px;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 50%;
+    border: 2px solid black;
+    float: left;
   }
-  .wrapper ul li{
-      margin:15px;
+
+  .wrapper ul li .fa {
+    color: black;
+    margin-top: 7px;
   }
-  .wrapper ul li.google{
-      margin-left: 15px;
+
+  .wrapper ul li:hover.facebook {
+    border: 2px solid #3b5998;
+    box-shadow: 0 0 15px #3b5998;
+    transition: all 0.5s ease;
+  }
+
+  .wrapper ul li:hover .fa-facebook {
+    color: #3b5998;
+    text-shadow: 0 0 15px #3b5998;
+    transition: all 0.5s ease;
+  }
+
+  /*twitter*/
+  .wrapper ul li:hover.twitter {
+    border: 2px solid #00aced;
+    box-shadow: 0 0 15px #00aced;
+    transition: all 0.5s ease;
+  }
+
+  .wrapper ul li:hover .fa-twitter {
+    color: #00aced;
+    text-shadow: 0 0 15px #00aced;
+    transition: all 0.5s ease;
+  }
+
+  /* instagram */
+  .wrapper ul li:hover.instagram {
+    border: 2px solid #bc2a8d;
+    box-shadow: 0 0 15px #bc2a8d;
+    transition: all 0.5s ease;
+  }
+
+  .wrapper ul li:hover .fa-instagram {
+    color: #bc2a8d;
+    text-shadow: 0 0 15px #bc2a8d;
+    transition: all 0.5s ease;
+  }
+
+  /* google */
+  .wrapper ul li:hover.google {
+    border: 2px solid #dd4b39;
+    box-shadow: 0 0 15px #dd4b39;
+    transition: all 0.5s ease;
+  }
+
+  .wrapper ul li:hover .fa-google {
+    color: #dd4b39;
+    text-shadow: 0 0 15px #dd4b39;
+    transition: all 0.5s ease;
   }
 }
